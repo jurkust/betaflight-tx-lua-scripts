@@ -1,5 +1,17 @@
 SetupPages = {
    {
+      title = "VTX",
+      text = {},
+      fields = {
+         { t = "Band",    x = 25,  y = 14, sp = 50, i=2, min=1, max=5, table = { "A", "B", "E", "F", "R" } },
+         { t = "Channel", x = 25,  y = 24, sp = 50, i=3, min=1, max=8 },
+         { t = "Power",   x = 25,  y = 34, sp = 50, i=4, min=1 },
+         { t = "Pit",     x = 25,  y = 44, sp = 50, i=5, min=0, max=1, table = { [0]="OFF", "ON" } },
+         { t = "Dev",     x = 100, y = 14, sp = 32, i=1, ro=true, table = {[3]="SmartAudio",[4]="Tramp"} },
+         { t = "Freq",    x = 100, y = 24, sp = 32, i="f", ro=true },
+      },
+   },
+   {
       title = "PIDs",
       text = {
          { t = "Roll",  x = 21,  y = 14 },
@@ -40,19 +52,6 @@ SetupPages = {
          { t = "Yaw",   x = 10,  y = 48, sp = 40, i=5 },
          { t = "Rate",  x = 75,  y = 48, sp = 30, i=12 },
          { t = "Expo",  x = 135, y = 48, sp = 30, i=11 },
-      },
-   },
-   {
-      title = "VTX",
-      text = {},
-      fields = {
-         -- Super Rate
-         { t = "Band",    x = 25,  y = 14, sp = 50, i=2, min=1, max=5, table = { "A", "B", "E", "F", "R" } },
-         { t = "Channel", x = 25,  y = 24, sp = 50, i=3, min=1, max=8 },
-         { t = "Power",   x = 25,  y = 34, sp = 50, i=4, min=1 },
-         { t = "Pit",     x = 25,  y = 44, sp = 50, i=5, min=0, max=1, table = { [0]="OFF", "ON" } },
-         { t = "Dev",     x = 100, y = 14, sp = 32, i=1, ro=true, table = {[3]="SmartAudio",[4]="Tramp"} },
-         { t = "Freq",    x = 100, y = 24, sp = 32, i="f", ro=true },
       },
    }
 }
